@@ -1,4 +1,26 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    
+    --site-bg: #003D22   ;
+    --secondary-color: #015125 ;
+  
+
+    --link-color:lightseagreen;
+    --link-bg-color:#014a1d;
+    --link-hover-color:cyan;
+    --link-hover-bg-color:#106433;
+    
+    --header-font: "Roboto";
+    --secondary-font: "Roboto Condensed";
+  
+    
+  }
+
+
+
 
 #content{
     max-width: 1600px;
@@ -10,19 +32,25 @@
 
 
 nav a {
+    padding:0% 2% 0% 2%;
+    font-family:var(--secondary-font);
+    font-size:2em;
+    text-decoration:wavy;
     text-align: center;
-    color:lightseagreen;
+    color:var(--link-color);
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #106433;
-    color: cyan;
+    background-color:var(--link-hover-bg-color);
+    color:var(--link-hover-color);
 }
 
 #hero-img{
     width:100%
 }
+
 #hero-msg h1, #hero-msg h4 {
+    font-family:var(--header-font);
     text-align: center;
 }
 
@@ -35,6 +63,7 @@ nav a:hover {
 }
 
 .home-title{ 
+    font-size:2em;
     color:royalblue;
 }
 
@@ -48,61 +77,96 @@ h4{
 
 #background {
     height: 725px;
-    background-color: #015125;
+    background-color: var(--secondary-color);
 }
 
 body {
 
-    background-color: #003D22;
+    margin: 0;
+    padding: 0;
+    background-color: var(--site-bg);
 }
 
 header {
 
-    background-color: #015125;
+    background-color: var(--secondary-color);
 }
 
 
+h2 {
+    margin: 0;
+}
 
 .book, .join {
-    background-color: #005804;
-    color:lightseagreen;
+    padding: 15px 30px;
+    margin-bottom: 150px;
+    font-size:18px;
+    font-family:var(--secondary-font);
+    background-color: var(--link-bg-color);
+    color:var(--link-color);
     text-decoration: none;
+    
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
-    background-color: #006b12;
-    color:cyan;
+    background-color: var(--link-hover-bg-color);
+    color:var(--link-hover-color);
 }
 
 .msg {
-    background-color: #015125;
+    background-color: var(--secondary-color);
 }
 .msg h2{
     color:cyan;
 }
 .msg p{
+    font-size:.8em;
     color:lightseagreen;
+    margin-bottom:50px;
 }
 
 .logo {
+    padding-top: 5px;
+    padding-left: 5px;
     width: 80px;
 }
 
+.home-grid h2{
+    font-family:var(--secondary-font);
+}
 
+.rivers-card img{
+    margin-top:50px;
+
+}
+
+.card-img{
+    margin: 200px 0;
+    border: 10px solid var(--secondary-color);
+    border-radius:5%;
+}
 
 footer {
+    margin-top: 200px;
+    font-family:var(--secondary-font);
     background-color: #015120;
     color:aquamarine;
 }
 footer a{
-    color: lightseagreen;
+    color: var(--link-color);
     text-decoration: none;
 }
 footer a:hover{
-    color:cyan;
+    color:var(--link-hover-color);
 }
 footer p{
     font-size:1.2em;
 }
 footer p a:hover{
     text-decoration: underline;
+}
+
+
+main section img {
+    box-sizing: border-box;
 }
