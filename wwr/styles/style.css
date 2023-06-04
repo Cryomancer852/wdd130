@@ -159,7 +159,6 @@ h2 {
     background-color: var(--link-bg-color);
     color:var(--link-color);
     text-decoration: none;
-    
     border-radius: 5px;
 }
 .book:hover, .join:hover {
@@ -193,9 +192,6 @@ h2 {
     font-family:var(--secondary-font);
 }
 
-.camping-card .icon{
-    margin-top:92px;
-}
 
 
 
